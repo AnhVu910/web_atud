@@ -1,23 +1,31 @@
 import { Row } from "antd";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { ShoppingOutlined } from "@ant-design/icons";
+
+export const ShoppingOutline = styled(ShoppingOutlined)`
+  font-size: 30px;
+  color: antiquewhite;
+`;
 
 export const WrapperHeader = styled(Row)`
   background-color: #599ff5;
   align-items: center;
   text-align: center;
-  gap: 16px;
   flex-wrap: nowrap;
   width: 100%;
   padding: 10px 0;
 `;
 
 export const WrapperTextHeader = styled(Link)`
-  font-size: 18px;
-  color: #fff;
+  font-size: 30px;
+  color: antiquewhite;
   font-weight: bold;
+  font-family: fantasy;
+  font-style: italic;
+  padding-left: 10px;
   &:hover {
-    font-size: 18px;
+    font-size: 30px;
     color: #fff;
   }
 `;
