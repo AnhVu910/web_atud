@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefaultComponent from "./components/DefaultComponent/DefaultComponent";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
 import Loading from "./components/LoadingComponent/Loading";
 import { routes } from "./routes";
 
