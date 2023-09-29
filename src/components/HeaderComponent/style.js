@@ -33,15 +33,9 @@ export const WrapperTextHeader = styled(Link)`
 export const WrapperHeaderAccout = styled.div`
   display: flex;
   align-items: center;
-  color: #fff;
+  padding-left: 25px;
+  color: antiquewhite;
   gap: 10px;
-  max-width: 200px;
-`;
-
-export const WrapperTextHeaderSmall = styled.span`
-  font-size: 12px;
-  color: #fff;
-  white-space: nowrap;
 `;
 
 export const WrapperContentPopup = styled.p`

@@ -5,7 +5,7 @@ import {
   ShoppingOutline,
   WrapperHeader,
   WrapperTextHeader,
-  WrapperTextHeaderSmall,
+  WrapperHeaderAccout,
 } from "./style";
 import {
   UserOutlined,
@@ -16,12 +16,13 @@ import {
   WechatOutlined,
   QuestionCircleOutlined,
   DownloadOutlined,
+  ShoppingCartOutlined,
 } from "@ant-design/icons";
 
 const HeaderComponent = () => {
   return (
     <div>
-      <div className="header" style={{ position: "fixed", width: "100%" }}>
+      <div className="header">
         <WrapperHeader>
           <Col span={2}>
             <div
@@ -121,10 +122,17 @@ const HeaderComponent = () => {
               enterButton
             />
           </Col>
-          <Col span={6}>
-            <div>
-              <UserOutlined />
-            </div>
+          <Col span={3}>
+            <WrapperHeaderAccout>
+              <UserOutlined style={{ fontSize: "25px" }} />
+              <span style={{ fontSize: "15px" }}>Đăng nhập</span>
+            </WrapperHeaderAccout>
+          </Col>
+          <Col span={3}>
+            <WrapperHeaderAccout>
+              <ShoppingCartOutlined style={{ fontSize: "25px" }} />
+              <span style={{ fontSize: "15px" }}>Giỏ hàng</span>
+            </WrapperHeaderAccout>
           </Col>
         </WrapperHeader>
       </div>
