@@ -33,9 +33,16 @@ const CardComponent = (props) => {
     <WrapperCardStyle
       hoverable
       headStyle={{ width: "200px", height: "200px" }}
-      style={{ width: 200 }}
+      style={{ width: 222 }}
       bodyStyle={{ padding: "10px" }}
-      cover={<img alt="example" src={image} />}
+      cover={
+        <img
+          alt="example"
+          src={
+            "https://didongmoi.com.vn/upload/images/product/apple/iphone-15-plus-chinh-hang-5.jpg"
+          }
+        />
+      }
       onClick={() => handleDetailsProduct(id)}
     >
       <img
