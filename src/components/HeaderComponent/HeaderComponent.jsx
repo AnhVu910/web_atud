@@ -1,4 +1,4 @@
-import { Col } from "antd";
+import { Badge, Col } from "antd";
 import Search from "antd/es/input/Search";
 import React from "react";
 import {
@@ -130,7 +130,9 @@ const HeaderComponent = () => {
           </Col>
           <Col span={3}>
             <WrapperHeaderAccout>
-              <ShoppingCartOutlined style={{ fontSize: "25px" }} />
+              <Badge count={4} size="small">
+                <ShoppingCartOutlined style={{ fontSize: "25px" }} />
+              </Badge>
               <span style={{ fontSize: "15px" }}>Giỏ hàng</span>
             </WrapperHeaderAccout>
           </Col>
